@@ -15,6 +15,7 @@ def search_youtube(query: str, max_results: int = 25) -> list[dict]:
         "extract_flat": True,
         "skip_download": True,
         "playlistend": max_results,
+        "nocheckcertificate": True,
     }
 
     search_url = f"ytsearch{max_results}:{query}"
